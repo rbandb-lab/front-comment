@@ -4,17 +4,29 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/console": "5.4.*",
-        "symfony/dotenv": "5.4.*",
+        "doctrine/collections": "^2.1",
+        "doctrine/common": "^3.4",
+        "doctrine/doctrine-bundle": "^2.8",
+        "symfony/console": "6.2.*",
+        "symfony/dotenv": "6.2.*",
         "symfony/flex": "^1.17|^2",
-        "symfony/framework-bundle": "5.4.*",
-        "symfony/runtime": "5.4.*",
-        "symfony/yaml": "5.4.*"
-    },
-    "require-dev": {
+        "symfony/framework-bundle": "6.2.*",
+        "symfony/http-client": "6.2.*",
+        "symfony/intl": "6.2.*",
+        "symfony/polyfill-intl-messageformatter": "*",
+        "symfony/runtime": "6.2.*",
+        "symfony/string": "6.2.*",
+        "symfony/templating": "6.2.*",
+        "symfony/twig-bundle": "6.2.*",
+        "symfony/webpack-encore-bundle": "^1.16",
+        "symfony/yaml": "6.2.*",
+        "tgalopin/html-sanitizer-bundle": "*",
+        "twig/extra-bundle": "*",
+        "twig/intl-extra": "*",
+        "twig/twig": "^3.5"
     },
     "config": {
         "allow-plugins": {
@@ -62,7 +74,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.4.*"
+            "require": "6.2.*"
         }
     }
 }

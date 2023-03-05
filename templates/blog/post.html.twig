@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <article class="post">
+        <h2>
+            <a href="{{ path('post', {id: post.id}) }}">
+                {{ post.title }}
+            </a>
+        </h2>
+
+        <p class="post-metadata">
+            <span class="metadata"><i class="fa fa-calendar"></i> {{ post.publishedAt|format_datetime('long', 'medium', '', 'UTC') }}</span>
+            <span class="metadata"><i class="fa fa-user"></i> {{ post.author.username }}</span>
+        </p>
+
+        <h4>{{ post.summary }}</h4>
+        <p>{{ post.content | raw }}</p>
+    </article>
+
+    <h5>Comments</h5>
+    {% include 'comments/comments.html.twig' %}
+
+{% endblock %}
